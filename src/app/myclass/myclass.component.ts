@@ -39,4 +39,9 @@ export class MyclassComponent implements Pingible{
     this.result1 = person.sub(5.5) * person.ed(4.5,7.8);
   }
 
+  sendMessage() {
+    this.messageEvent.emit(this.outputChildMessage);
+    
+  }
+
 }

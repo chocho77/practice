@@ -18,6 +18,7 @@ export class PostComponent implements OnInit, Pingible, AfterViewInit{
   @Input()
   fromPrt!:string;
   postMessage:string = "Message from Post Component. Parent!";
+  fromChildOutput!:string;
   
   constructor () {
     this.ping();
@@ -44,5 +45,11 @@ export class PostComponent implements OnInit, Pingible, AfterViewInit{
   }
 
   @ViewChild(MyclassComponent) childComp: any;
+
+  recieveMessage($event: any){
+    //console.log($event);
+    this.fromChildOutput = $event;
+    
+  }
 
 }

@@ -1,8 +1,10 @@
+<p>post works!</p>
 <h1>{{title}}</h1>
 <h3>{{fromParent}}</h3>
 <h4>{{fromPrt}}</h4>
 <h5>{{pingMsg}}</h5>
 <h5>Number: {{num}}</h5>
 <p>{{message}}</p>
-<app-myclass [fromParent] = 'postMessage'></app-myclass>
-
+<app-myclass [fromParent] = 'postMessage' (messageEvent)='recieveMessage($event)'></app-myclass>
+<p>{{fromChildOutput}}</p>
+<p>end post works</p>
