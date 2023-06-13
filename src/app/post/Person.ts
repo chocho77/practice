@@ -8,4 +8,11 @@ export class Person {
         this.lastName = "Momchilov";
         this.emailPerson = "chavmom@gmail.com";
     }
+    sub(num:number) {
+        return num * num;
+
+    }
+    ed(num:number, num1:number) {
+        return num * num1;
+    }
 }
