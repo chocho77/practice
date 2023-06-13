@@ -1,4 +1,4 @@
-import { Component,Input } from '@angular/core';
+import { Component,Input,Output,EventEmitter } from '@angular/core';
 import { Person } from '../post/Person';
 import { Pingible } from '../Pingible';
 
@@ -19,6 +19,11 @@ export class MyclassComponent implements Pingible{
   @Input()
   fromParent!: string;
   childMessage:string = 'From Chiled Component';
+
+  outputChildMessage:string = 'Message from Child Component Via Output';
+
+  @Output() messageEvent = new EventEmitter<string>();
+
 
   constructor() {
     this.ping();
