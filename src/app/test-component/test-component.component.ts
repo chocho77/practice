@@ -12,6 +12,6 @@ export class TestComponentComponent {
   imgNaturaUrl:string = 'https://media.istockphoto.com/id/467367026/photo/perfect-sky-and-ocean.jpg?s=1024x1024&w=is&k=20&c=IM7cOUPReUOJ_CVZBn1oliD9j-wBc8z-G7NIgrkPtsE=';
   imgKitUrl:string = 'https://media.istockphoto.com/id/1164887104/photo/a-baby-humpback-whale-plays-near-the-surface-in-blue-water.webp?s=2048x2048&w=is&k=20&c=cArhOJbfgGibHlIdBhwUrcJdpDqBzusg8hMdX9noFnE=';
   
-  bool:boolean = true;
+  bool:boolean = false;
   
 }
