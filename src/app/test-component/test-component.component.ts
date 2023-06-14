@@ -18,5 +18,9 @@ export class TestComponentComponent {
     console.log('Clicked!');
     
   }
+
+  onKeyup() {
+      console.log('Enter key is pressed.');
+  }
   
 }

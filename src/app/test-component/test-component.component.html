@@ -13,4 +13,6 @@
 <h1 [style.color] = "bool? 'red' : 'blue'">Style Binding</h1>
 <!--event binding-->
 <button (click)="buttonClick()">Click Me</button>
+<!--Event Filtering-->
+<input type="text" (keyup.enter) = "onKeyup()">
 <p>end test-component works</p>
