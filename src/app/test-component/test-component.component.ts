@@ -13,5 +13,10 @@ export class TestComponentComponent {
   imgKitUrl:string = 'https://media.istockphoto.com/id/1164887104/photo/a-baby-humpback-whale-plays-near-the-surface-in-blue-water.webp?s=2048x2048&w=is&k=20&c=cArhOJbfgGibHlIdBhwUrcJdpDqBzusg8hMdX9noFnE=';
   
   bool:boolean = false;
+
+  buttonClick() {
+    console.log('Clicked!');
+    
+  }
   
 }
