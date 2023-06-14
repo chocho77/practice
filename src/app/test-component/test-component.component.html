@@ -1,4 +1,13 @@
 <p>test-component works!</p>
+<!--string Interpolation-->
 <p>{{message}}</p>
-<img src="{{imgUrl}}" alt="">
+
+<img src="{{imgUrl}}" alt=""><br/>
+<img src="{{imgNaturaUrl}}" alt=""><br/>
+<img src="{{imgKitUrl}}" alt="">
+!--property binding-->
+<img [src]="imgUrl" alt=""><br/>
+<img [src]="imgNaturaUrl" alt=""><br/>
+<img [src]="imgKitUrl" alt="">
+<h2 [class.text-red] = "bool">Angular Test</h2>
 <p>end test-component works</p>
