@@ -17,6 +17,11 @@
 <br/>
 <input type="text" [(ngModel)] = "userName" (keyup.enter) = "onKeyup()">
 <br/>
+<label>One Way Data Binding</label>
+<input type="text" [value] = 'textValue' (keyup.enter) = "onKeyup()">
+<br/>
+<label>Two Way Data Binding</label>
+<input type="text" [(ngModel)] = 'textValue' (keyup.enter) = "onKeyup()">
 <textarea id="w3review" name="w3review" rows="4" cols="50">
     At w3schools.com you will learn how to make a website. 
     They offer free tutorials in all web development technologies.

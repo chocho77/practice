@@ -14,6 +14,7 @@ export class TestComponentComponent {
   
   bool:boolean = false;
   userName!:string;
+  textValue:string = 'Value is coming from component.';
 
   buttonClick() {
     console.log('Clicked!');
@@ -21,7 +22,7 @@ export class TestComponentComponent {
   }
 
   onKeyup() {
-      console.log(this.userName);
+      console.log(this.textValue);
   }
   
 }
